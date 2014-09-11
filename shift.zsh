@@ -18,21 +18,3 @@ done
 function usage {
 	echo "Usage: hello"
 }
-
-echo "LOG: $LOG"
-
-echo "PROC: $PROC"
-
-echo "ONE_UP: $ONE_UP"
-
-echo "CAT: $CAT"
-
-if [ -z "$LOG" ]
-then
-    echo "LOG is null mate!"
-fi
-
-if [ -n "$1" ]
-then
-    echo "LOG not null mate!"
-fi
