@@ -1,33 +1,36 @@
 #!/usr/bin/env zsh
 
-csv='a\nb\nc\nd'
-words=( ${(s:\n:)csv} )
+source colors.zsh
 
-echo "slashes"
-for i in $words
+
+green "method 1"
+string='arobinbrobincrobind'
+words=(${(s:robin:)string})
+# This doesn't work when put into a function!
+for word in $words
 do
-	echo next
-	echo $i
+	echo $word
 done
 echo
 
-echo "words"
-csv='arobinbrobincrobind'
-words=( ${(s:robin:)csv} )
 
-for i in $words
+green "method 2"
+string=`grep -r type .`
+words=("${(f)string}")
+for word in $words
 do
-	echo next
-	echo $i
+	echo $word
 done
 echo
 
-echo "grep"
-csv=`grep -r type .`
 
-words=("${(f)csv}")
-for i in $words
-do
-	echo next
-	echo $i
-done
+# This method can be parametized using arguments
+# green "method 3"
+# string='arobinbrobincrobind'
+# separator="robin"
+# eval 'words=(${(s:${separator}:)string})'
+# for word in $words
+# do
+# 	echo $word
+# done
+# echo
