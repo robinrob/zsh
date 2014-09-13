@@ -1,1 +1,0 @@
-/Users/msl/Programming/robin/dotfiles/colors.sh
