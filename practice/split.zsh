@@ -24,6 +24,14 @@ done
 echo
 
 
+green "split by space"
+string="robin buko smith"
+words=(${(s: :)string})
+for word in $words
+do
+	echo $word
+done
+
 # This method can be parametized using arguments
 # green "method 3"
 # string='arobinbrobincrobind'
