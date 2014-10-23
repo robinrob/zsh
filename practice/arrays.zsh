@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source $ZSH_HOME/colors.zsh
+source $ZSH_HOME/lib/colors.zsh
 
 yellow "elements are separated by a space:"
 arr=(1 2 3)
