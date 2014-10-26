@@ -4,3 +4,6 @@
 [submodule "projects/dotfiles"]
 	path = projects/dotfiles
 	url = git@bitbucket.org:robinrob/dotfiles.git
+[submodule "projects/oh-my-dotfiles"]
+	path = projects/oh-my-dotfiles
+	url = git@bitbucket.org:robinrob/oh-my-dotfiles.git

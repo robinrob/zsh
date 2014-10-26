@@ -2,18 +2,21 @@
 
 source $ZSH_HOME/lib/colors.zsh
 
+function code {
+  CODE='a='$1'; echo $a'
+
+  echo "$(green $CODE:) $(yellow $(eval $CODE))"
+}
+
+
 yellow "Elements are separated by a space:"
-arr=(1 2 3)
-echo $arr
+code '(1 2 3)'
 
-arr=("Hello" "Robin")
-echo $arr
+code '(Hello Robin)'
 
 
-yellow "2D array:"
-arr=((1 2) (3 4))
+yellow "Add array to an array"
 
-for el in $arr
-do
-  echo $el
-done
+code '(1 2); a=($a 3)'
+
+code '(dir1 dir2); a=($a dir3)'
