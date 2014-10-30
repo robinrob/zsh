@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
 
-function all {
-}
+print "Hello "
+echo "World!"
