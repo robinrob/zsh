@@ -7,3 +7,8 @@ function log {
   result=$(eval $CMD)
   echo "$(green)${CMD}: $(yellow)$result"
 }
+
+function lognl {
+  log $@
+  echo
+}
