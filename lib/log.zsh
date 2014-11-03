@@ -5,7 +5,7 @@ function log {
   CMD=$1
 
   result=$(eval $CMD)
-  echo "$(green)${CMD}: $(yellow)$result"
+  printf "$(green)${CMD}: $(yellow)$result"
 }
 
 function lognl {
