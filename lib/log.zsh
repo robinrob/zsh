@@ -10,5 +10,10 @@ function log {
 
 function lognl {
   log $@
-  echo
+  printf "\n"
+}
+
+function log2nl {
+  log $@
+  printf "\n"; printf "\n"
 }
