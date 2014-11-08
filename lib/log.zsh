@@ -4,8 +4,12 @@ source $ZSHCOLORS_PATH
 function log {
   CMD=$1
 
-  result=$(eval $CMD)
-  printf "$(green)${CMD}: $(yellow)$result"
+  if [[ -n $CMD ]]
+  then  
+    result=$(eval $CMD)
+    printf "$(green)${CMD}: $(yellow)$result"
+  fi
+  printf "\n"
 }
 
 function lognl {
