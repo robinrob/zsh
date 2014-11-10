@@ -3,13 +3,18 @@
 source $ZSHLOG_PATH
 
 
-#log "setopt localoptions; setopt autocd; setopt; wanker"
+# Ok this one doesn't work because of reason given in following stack-overflow question:
+# http://stackoverflow.com/questions/26789277/options-do-not-work-inside-zsh-script
+# setopt autocd;
+
+cyan "RC quotes means that double-quoting can be used to escape quotes."
 
 function wanker {
-  wanker
-  pwd
+  setopt rcquotes
+  log "setopt rcquotes; echo a wanker''''s wanker "
 }
 
-
-#setopt autocd
 wanker
+
+log "echo a wanker''''s wanker "
+
