@@ -6,8 +6,17 @@ function log {
 
   if [[ -n $CMD ]]
   then  
-    result=$(eval $CMD)
-    printf "$(green)${CMD}: $(yellow)$result"
+    printf "$(green)$CMD: $(yellow)$(eval $CMD)"
+  fi
+  printf "\n"
+}
+
+function logb {
+  CMD=$1
+
+  if [[ -n $CMD ]]
+  then  
+    printf "$(green)$CMD: \n$(yellow)$(eval $CMD)"
   fi
   printf "\n"
 }
