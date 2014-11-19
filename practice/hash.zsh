@@ -31,21 +31,9 @@ log
 
 cyan "A key-value pair can be unset:"
 
-log 'typeset -A a
-
+logb 'typeset -A a
 a=(one two three four)
-
-print ${a[two]}'
-
-
-
-log 'typeset -A a
-
-a=(one two three four)
-
-print $a[two]
-
-unset 'a[two]'
 
 print $a[one]
-print $a[two]'
+unset "a[one]"
+print $a[one]'
