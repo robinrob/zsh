@@ -2,6 +2,15 @@
 
 source $ZSHLOG_PATH
 
+
+cyan "Scalar - this is the default variable type."
+log 'typeset a=one
+print $a'
+maganda "It is not actually named 'string' type."
+
+log
+
+
 cyan "Int:"
 log 'typeset -i a; a=1+2; echo $a'
 log 'integer a
@@ -83,15 +92,18 @@ print "main: $var"'
 log
 
 
-cyan "Although you can do assignments in a typeset statement, you can't assign to arrays:"
+cyan "Although you can do assignments in a typeset statement, you can't assign
+to arrays:"
 
 log "typeset var=(Doesn\'t work!)"
 
-maganda "... Because the syntax with the parentheses is special; it only works when the line consists of nothing but assignments."
+maganda "... Because the syntax with the parentheses is special; it only works
+when the line consists of nothing but assignments."
 
 log
 
-cyan "However, the shell doesn't complain if you try to assign an array to a scalar, or vice versa; it just silently converts the type:"
+cyan "However, the shell doesn't complain if you try to assign an array to a
+scalar, or vice versa; it just silently converts the type:"
   
 log 'typeset var="scalar value"
 var=(array value)
@@ -115,8 +127,8 @@ log
 log 'typeset var=$(echo two words)
 echo $var'
 
-maganda "This happens because typeset is just an ordinary command, so the rules for parsing argument lists
-for commands apply."
+maganda "This happens because typeset is just an ordinary command, so the rules
+for parsing argument lists for commands apply."
 
 log
 
@@ -130,12 +142,13 @@ log 'typeset var
 var=$(echo two words)
 echo $var'
 
-maganda "This can tell a scalar assignment, and hence knows not to split words, or quote the backquotes"
+maganda "This can tell a scalar assignment, and hence knows not to split words,
+or quote the backquotes"
 
 log
 
-cyan "A variable created inside of an arithmetic expression can be made global - and therefore referenceable
-from outside the expression - by using typset -g:"
+cyan "A variable created inside of an arithmetic expression can be made global -
+and therefore referenceable from outside the expression - by using typset -g:"
 
 log 'function fn {
   typeset -Fg a
@@ -160,22 +173,25 @@ outerfn() {
 
 outerfn'
 
-maganda "The error message comes because it tried to preserve the value of $f while changing its type,
-and the value wasn't a proper floating point expression - assigning to numeric parameters
+maganda "The error message comes because it tried to preserve the value of $f
+while changing its type, and the value wasn't a proper floating point expression
+ - assigning to numeric parameters
 always does an arithmetic evaluation"
 
 
 log
 
 
-cyan "ZSH will force a string variable to the right value when used in an arithmetic expresion.
-It will also convert a number value to a string when assigned to a string variable:"
+cyan "ZSH will force a string variable to the right value when used in an
+arithmetic expresion. It will also convert a number value to a string when
+assigned to a string variable:"
 
 log 'typeset a=1
 (( a = a + 2.14 ))
 print $a'
 
-maganda "This means that you can have a variable that is sometimes a string, and sometimes a number!"
+maganda "This means that you can have a variable that is sometimes a string, and
+sometimes a number!"
 
 
 log
