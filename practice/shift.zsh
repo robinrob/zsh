@@ -1,20 +1,12 @@
 #!/usr/bin/env zsh
 
-# Usage: ./parse_opts.sh -l logfile -p process -o test
+source $ZSHLOG_PATH
 
-while getopts :r:l:p:o:q:t: name
-do
-	case $name in
-		l) LOG="$OPTARG" ;;        # LOG FILE
-    p) PROC="$OPTARG" ;;       # Process name
-    o) ONE_UP="$OPTARG" ;;     # One_Up Number
-    q) PRNT="$OPTARG" ;;       # q Print queue 'FTP' for now
-    c) CAT="$OPTARG" ;;        # lis file name
-    t) FTPDEST="$OPTARG" ;;    # D = Disk, T = Tape
-    *) usage ;;                # display usage and exit
-	esac
-done
 
-function usage {
-	echo "Usage: hello"
-}
+cyan "Shift doesn't just operate on the positional parameters. That is just the
+default behaviour if given no parameters:"
+
+log 'set -A arr one two three
+print $arr[1]
+shift arr
+print $arr[1]'
