@@ -3,15 +3,37 @@
 source $ZSHLOG_PATH
 
 
-cyan "Double parentheses surround a complete arithmetic expression: it behaves as if it\'s quoted."
+cyan "Double parentheses surround a complete arithmetic expression: it behaves
+as if it\'s quoted."
 
 logb 'integer i j=12
 (( i = 3 * ( j + 4 ) ** 2 ))
 print $i
 print $j'
 
-maganda "Note that that parameters don't need to have the $ in front, even when their value is being referenced.
-Also note that it is not necessary to have spaces around the '=' operator"
+maganda "Note that that parameters don't need to have the $ in front, even when
+their value is being referenced. Also note that it is not necessary to have
+spaces around the '=' operator"
+
+
+log
+
+
+cyan "Arithmetic expressions can also be done in square brackets using different
+operator symbols:"
+
+log '[[ 1 == 1 ]] && print "equal!"'
+log '[[ 2 -gt 1 ]] && print "greater!"'
+log '[[ 1 -ge 1 ]] && print "greater than or equal!"'
+
+log
+
+
+cyan "The value of an arithmetic expression is true if it evalutes to a number
+greater than zero, otherwise it is false, when used in a statement like this:"
+
+log '(( 1 )) && print "true!"'
+log '(( -1 )) && print "false"'
 
 
 log
