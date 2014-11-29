@@ -3,7 +3,23 @@
 source $ZSHLOG_PATH
 
 
-array=(two words)
-if [[ $array == 'two words' ]]; then
-  print "The array \$array is OK.  O, joy."
-fi
+function args {
+  print $# $*
+}
+
+set arguments to the shell
+
+print $*
+args $*
+args $@
+
+log
+
+args "$*"
+args "$@"
+
+log
+
+unsetopt shwordsplit
+args $*
+args "$@"
