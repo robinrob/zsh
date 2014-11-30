@@ -1,6 +1,11 @@
 #!/usr/bin/env zsh
 
-one="1"
+source $ZSHLOG_PATH
+
+
+cyan "Strings are cooerced into numbers inside arithmetic parentheses:"
+
+log 'one="1"
 two="2"
 
-echo $(( one + two ))
+print $(( one + two ))'

@@ -1,7 +1,0 @@
-#!/usr/bin/env zsh
-
-source $ZSHLOG_PATH
-
-
-log "printf 'robin\\\b\\\b'"
-

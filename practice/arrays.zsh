@@ -1,22 +1,27 @@
 #!/usr/bin/env zsh
 
-source $ZSH_HOME/lib/colors.zsh
+source $ZSHLOG_PATH
 
-function code {
-  CODE='a='$1'; echo $a'
+cyan "Array Elements are separated by a space:"
 
-  echo "$(green $CODE:) $(yellow $(eval $CODE))"
-}
-
-
-yellow "Elements are separated by a space:"
-code '(1 2 3)'
-
-code '(Hello Robin)'
+log 'a=(1 2 3)
+print $a[2]'
 
 
-yellow "Add array to an array"
+log
 
-code '(1 2); a=($a 3)'
 
-code '(dir1 dir2); a=($a dir3)'
+cyan "Add array to an array"
+
+log 'a=(1 2)
+a=($a 3)
+print $a'
+
+
+log
+
+
+cyan "Length of an array:"
+
+log 'a=(1 2 3 4 5)
+print $#a'

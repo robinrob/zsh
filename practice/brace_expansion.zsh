@@ -1,19 +1,30 @@
 #!/usr/bin/env zsh
 
-source $ZSH_HOME/colors.zsh
+source $ZSHLOG_PATH
 
-yellow "echo something:"
-echo {Hello,Goodbye}\ World
 
-yellow "ls files:"
-ls {arithmetic,brace}_expansion.zsh
+cyan "Perform command twice:"
 
-yellow "Create multiple files:"
-touch log_00{1,2,3}.txt
+log 'print {Hello,Goodbye}\ World'
 
-ls log_00{1,2,3}.txt | grep "log.*.txt"
+log 'ls {arithmetic,array,brace}_expansion.zsh'
 
-yellow "Using a range: {1..3}"
+
+log
+
+
+cyan "A range:"
+
+log 'print {1..3}'
+
+log 'touch log_00{1,2,3}.txt
 ls log_00{1..3}.txt | grep "log.*.txt"
+rm log_00{1..3}.txt'
 
-rm log_00{1..3}.txt
+
+log
+
+
+cyan "Nested braces:"
+
+log 'print {now,th{en,ere{,abouts}}}'
