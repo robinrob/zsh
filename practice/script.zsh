@@ -2,12 +2,8 @@
 
 source $ZSHLOG_PATH
 
-function fn {
-  print "OPTIND: $OPTIND"
-  print "args: $@"
-  getopts
-  print "OPTIND: $OPTIND"
-  print "args: $@"
-}
 
-fn 1 2 3 4 5
+array=(two words)
+if [[ $array == 'two words' ]]; then
+  print "The array \$array is OK.  O, joy."
+fi

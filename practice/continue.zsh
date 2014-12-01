@@ -3,7 +3,9 @@
 source $ZSHLOG_PATH
 
 
-a=(1 2 3)
+cyan "Use of continue within a loop:"
+
+log 'a=(1 2 3)
 
 for i in $a
 do
@@ -13,5 +15,4 @@ do
   fi
   
   echo $i
-done
-
+done'
