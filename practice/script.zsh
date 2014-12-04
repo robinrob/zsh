@@ -2,4 +2,8 @@
 
 source $ZSHLOG_PATH
 
-echo This is output > >(sed 's/output/rubbish/' >outfile)
+
+array=(two words)
+if [[ $array == 'two words' ]]; then
+  print "The array \$array is OK.  O, joy."
+fi
