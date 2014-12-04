@@ -12,3 +12,9 @@ print
 print -l "${(@)array}"'
 
 maganda "The first works on an array, the second on any value."
+
+
+log
+
+
+cyan "f flag splits a string into an array usin"
