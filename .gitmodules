@@ -1,9 +1,9 @@
 [submodule "projects/dotfiles"]
   path = projects/dotfiles
-  url = git@bitbucket.org:robinrob/dotfiles.git
+  url = git@github.com:robinrob/dotfiles.git
 [submodule "projects/oh-my-dotfiles"]
   path = projects/oh-my-dotfiles
-  url = git@bitbucket.org:robinrob/oh-my-dotfiles.git
+  url = git@github.com:robinrob/oh-my-dotfiles.git
 [submodule "rakelib"]
   path = rakelib
   url = git@github.com:robinrob/rakelib.git
