@@ -4,6 +4,3 @@
 [submodule "projects/oh-my-dotfiles"]
   path = projects/oh-my-dotfiles
   url = git@github.com:robinrob/oh-my-dotfiles.git
-[submodule "rakelib"]
-  path = rakelib
-  url = git@github.com:robinrob/rakelib.git
