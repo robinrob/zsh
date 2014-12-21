@@ -6,7 +6,7 @@ function log {
 
   if [[ -n $CMD ]]
   then  
-    printf "$(green)$CMD: $(yellow)$(eval $CMD)"
+    printf "$(green)$CMD: $(yellow)$(eval $CMD)$(default)"
   fi
   printf "\n"
 }
@@ -16,7 +16,7 @@ function logb {
 
   if [[ -n $CMD ]]
   then  
-    printf "$(green)$CMD: \n$(yellow)$(eval $CMD)"
+    printf "$(green)$CMD: \n$(yellow)$(eval $CMD)$(default)"
   fi
   printf "\n"
 }
