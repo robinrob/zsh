@@ -3,7 +3,12 @@
 source $ZSHLOG_PATH
 
 
-cyan "\'select\' prints a menu that you must choose an item from."
-log 'select var in earth air fire water; do
-  print You selected $var
-done'
+cyan "This is how to use select statement:"
+
+select var in robin smith
+do
+  case $var in
+    robin) echo 'Robin!' ;;
+    smith) echo 'Smith' ;;
+  esac
+done
