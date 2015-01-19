@@ -3,9 +3,17 @@
 source $ZSHLOG_PATH
 
 
-function get_hash {
+function takes_hash {
   typeset -A wanker
 
-  wanker[bollocks]=fuck
-  wanker[prick]=tosser
+  wanker=( ${(Pkv)1} )
+
+  green $wanker[tosser]
 }
+
+
+typeset -A thishash
+
+thishash[tosser]=prick
+
+takes_hash thishash
