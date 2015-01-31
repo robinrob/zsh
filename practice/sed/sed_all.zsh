@@ -6,4 +6,4 @@
 # allows the function's contents to be seen by running e.g. `which bastard`.
 autoload -U +X $fpath[1]/*(:t) 2> /dev/null
 
-sed_all 's/smith/smith/g' '*'
+sed_all 's/smith/robin/g' 'sed_all/*'
