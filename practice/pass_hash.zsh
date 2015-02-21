@@ -11,9 +11,17 @@ function takes_hash {
   green $wanker[tosser]
 }
 
+function takes_hash2 {
+  print $@
+  set -A wanker $@
+
+  print $wanker[tosser]
+}
+
 
 typeset -A thishash
 
 thishash[tosser]=prick
 
 takes_hash thishash
+takes_hash2 $(print ${(kv)thishash})

@@ -37,3 +37,19 @@ a=(one two three four)
 print $a[one]
 unset "a[one]"
 print $a[one]'
+
+
+log
+
+
+cyan "Set hash keys using vars"
+
+logb 'typeset -A a
+
+key="robin"
+val="smith"
+
+a[$key]=$val
+
+print $a[$key]'
+
