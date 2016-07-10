@@ -4,6 +4,3 @@
 [submodule "projects/oh-my-dotfiles"]
   path = projects/oh-my-dotfiles
   url = git@github.com:robinrob/oh-my-dotfiles.git
-[submodule "projects/salesforce-data-loader"]
-	path = projects/salesforce-data-loader
-	url = git@bitbucket.org:cloudreach/salesforce-data-loader.git
