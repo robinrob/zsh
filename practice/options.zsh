@@ -32,7 +32,7 @@ log 'testopts() {
 
 testopts -a -b wanker dickhead'
 
-maganda "The colon ':' specifies whether an option takes an argument or not!!
+magenta "The colon ':' specifies whether an option takes an argument or not!!
 So in this example: the options b, c and C take arguments.
 
 The message that is printed if an option -\? is given, is not necessary as the
@@ -68,7 +68,7 @@ log 'testopts() {
 
 testopts -a -b dickhead'
 
-maganda "If the error isn't caught by the matching \? (which matches at least
+magenta "If the error isn't caught by the matching \? (which matches at least
 one character!) then the shell will continue with no errors, which can be
 confusing later on."
 
@@ -103,7 +103,7 @@ log 'testopts() {
 
 testopts -a -b dickhead'
 
-maganda "If the error isn't caught by the matching \? (which matches at least
+magenta "If the error isn't caught by the matching \? (which matches at least
 one character!) then the shell will continue with no errors, which can be
 confusing later on."
 

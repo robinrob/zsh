@@ -11,7 +11,7 @@ print -l "${array[@]}"
 print
 print -l "${(@)array}"'
 
-maganda "The first works on an array, the second on any value."
+magenta "The first works on an array, the second on any value."
 
 
 log

@@ -9,6 +9,6 @@ log '[[ -t 1 ]] && print not a terminal!'
 
 [[ -t 1 ]] && yellow is a terminal!
 
-maganda "This is the way to write interactive stuff in a script only when it is
+magenta "This is the way to write interactive stuff in a script only when it is
 being run in an interactive shell, but still be able to use the script as part
 of an automated process.'
