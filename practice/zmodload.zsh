@@ -9,4 +9,4 @@ log 'zmodload zsh/mathfunc
 (( pi = 4.0 * atan(1.0) ))
 print $pi'
 
-maganda "This actually links in the system mathematical library."
+magenta "This actually links in the system mathematical library."

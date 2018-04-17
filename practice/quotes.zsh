@@ -18,7 +18,7 @@ many tricks you can do by supplying flags in parentheses"
 log "string='This is a *string* with various \`special\` characters'
 print -r -- \${(q)string}"
 
-maganda "The read builtin didn't do anything to what you typed, so \$string
+magenta "The read builtin didn't do anything to what you typed, so \$string
 contains just those characters. The -r flag to print told it to print out what
 came after it in raw fashion, and here's the special part: \${(q)string} tells
 the shell to output the parameter with backslashes where needed to prevent
@@ -36,7 +36,7 @@ print $var
 print -r $var
 print ${(Q)var}'
 
-maganda "This is useful if you want to read in code from another file!"
+magenta "This is useful if you want to read in code from another file!"
 
 
 log

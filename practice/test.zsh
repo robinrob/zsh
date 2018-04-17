@@ -9,7 +9,7 @@ log 'test a = a && print true!'
 
 log 'test "a = a" && print true!'
 
-maganda "Usually though, the [[ ]] construct is used instead and contains the
+magenta "Usually though, the [[ ]] construct is used instead and contains the
 test to be performed."
 
 
@@ -46,7 +46,7 @@ log '[[ -e test.zsh ]] && print "file exists!"'
 
 log
 
-maganda "This also catches directories or symlinks."
+magenta "This also catches directories or symlinks."
 
 
 cyan "The hyphen-style tests -z and -n actually mean 'zero-length' and 'non-zero

@@ -10,7 +10,7 @@ cyan "This example demonstrates the usage of \$cdpath:"
 
 lognl 'cdpath=($ZSH_HOME/practice/crick .); cd watson; cd dna; pwd'
 
-maganda "The shell cd'ed into the 'dna' dir of 'crick', because 'crick' appeared in the \$cdpath
+magenta "The shell cd'ed into the 'dna' dir of 'crick', because 'crick' appeared in the \$cdpath
 before the current directory. ZSH prints the name of the directory cd'ed into in
 cases where it may be ambiguous like this - you can see this if you actually run the command in
 your interactive shell."

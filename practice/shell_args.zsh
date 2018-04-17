@@ -19,6 +19,6 @@ set two words
 args "$*"
 args "$@"'
 
-maganda "If you quote an array going into a function - it gets parsed as one
+magenta "If you quote an array going into a function - it gets parsed as one
 argument. However, quoting a string with spaces - like \$@ - gets parsed as
 multiple arguments split by a space, as usual."

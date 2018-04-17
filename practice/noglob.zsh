@@ -11,4 +11,4 @@ log
 
 log 'noglob print *'
 
-maganda "This saves the need to quote everything which can be annoying."
+magenta "This saves the need to quote everything which can be annoying."

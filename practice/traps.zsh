@@ -7,7 +7,7 @@ cyan "Traps capture signals so you can do something."
 
 log 'trap "print I''m trapped!" INT'
 
-maganda "The first argument is a chunk of shell code to execute, which obviously
+magenta "The first argument is a chunk of shell code to execute, which obviously
 needs to be quoted when you pass it as an argument, and the remaining arguments
 are a list of signals to handle, minus the SIG prefix. So:"
 

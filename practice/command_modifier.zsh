@@ -32,7 +32,7 @@ lognl "command echo wanker"
 
 lognl "command print wanker"
 
-maganda "Normally, shell functions take precedence over builtins which take precedence over external commands."
+magenta "Normally, shell functions take precedence over builtins which take precedence over external commands."
 
 
 echo

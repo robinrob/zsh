@@ -9,4 +9,4 @@ log 'setopt histverify
 echo '"'"'Hello!!'"'"'
 echo "Hello!!"'
 
-maganda "Then keep pressing return."
+magenta "Then keep pressing return."

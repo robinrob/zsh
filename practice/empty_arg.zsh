@@ -13,7 +13,7 @@ set hello "" there
 args "$*"
 args "$@"'
 
-maganda "If you want to actually pass an empty argument and refer to the empty
+magenta "If you want to actually pass an empty argument and refer to the empty
 argument within the function, then \"\$@\" should be used"
 
 
@@ -61,5 +61,5 @@ ${=@}          n       |     2     2     0
 
 log
 
-maganda "The second column refers to whether or not the option shwordsplit is
+magenta "The second column refers to whether or not the option shwordsplit is
 set."

@@ -7,4 +7,4 @@ cyan "ZSH's version of 'typeof':"
 
 log 'print ${(t)PATH}'
 
-maganda "This shows the type of a variable."
+magenta "This shows the type of a variable."

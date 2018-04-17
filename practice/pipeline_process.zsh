@@ -9,7 +9,7 @@ which is run in the current shell:"
 
 lognl "cd ../../ && pwd | echo done"
 
-maganda "This is not actually an obvious point - other shells run the first (left-most) portion
+magenta "This is not actually an obvious point - other shells run the first (left-most) portion
 in the current shell."
 
 echo

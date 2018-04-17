@@ -21,7 +21,7 @@ w=( ${(s.
 .)a} )
 print $w[1]'
 
-maganda "That's how to split a line using newline!"
+magenta "That's how to split a line using newline!"
 
 
 log

@@ -11,7 +11,7 @@ logb 'integer i j=12
 print $i
 print $j'
 
-maganda "Note that that parameters don't need to have the $ in front, even when
+magenta "Note that that parameters don't need to have the $ in front, even when
 their value is being referenced. Also note that it is not necessary to have
 spaces around the '=' operator"
 
@@ -105,7 +105,7 @@ log 'typeset -i a
 (( a = 16#ff * 2#10 ))
 print $a'
 
-maganda 'Note that if you want the result printed in base 10 after this expression, this should be
+magenta 'Note that if you want the result printed in base 10 after this expression, this should be
 specified explicitly in the typeset statement.'
 
 
@@ -139,4 +139,4 @@ cyan "\`let\` can also be used to evaluate expressions:"
 log 'let "a = 2 * 3"
 print $a'
 
-maganda "This is convenient because an expression can be passed into a function as a string."
+magenta "This is convenient because an expression can be passed into a function as a string."

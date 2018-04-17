@@ -21,4 +21,4 @@ logb 'set -A arr a whole load of words
 print $arr[1]
 print $arr[-1]'
 
-maganda "This can obviously be parameterized!"
+magenta "This can obviously be parameterized!"

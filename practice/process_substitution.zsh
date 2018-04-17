@@ -4,7 +4,7 @@ source $ZSHLOG_PATH
 
 log 'cat < <(echo This is output)'
 
-maganda "What happens is that the command \`echo This is output\' is run, with
+magenta "What happens is that the command \`echo This is output\' is run, with
 the obvious result. That output is not put straight into the command line, as it
 would be with command substitution, to be described shortly. Instead, the
 command line is given a filename which, when read, gets that output."
@@ -17,7 +17,7 @@ log 'echo This is output > tmpfile
 cat < tmpfile
 rm tmpfile'
 
-maganda "Therefore if you want to redirect input from the process substitution
+magenta "Therefore if you want to redirect input from the process substitution
 you need an extra <, over and above the one in the substitution syntax."
 
 
@@ -58,7 +58,7 @@ being piped:"
   
 yellow './myscript 2> >(grep -v idiot >error.log) | process-output >output.log'
 
-maganda "A little abstract, but here the main point of the script `myscript` is
+magenta "A little abstract, but here the main point of the script `myscript` is
 to produce some output which undergoes further processing on the right-hand side
 of the pipe. However, we want to process the error output here, by filtering out
 occurrences of lines which use the word `idiot`, before dumping those errors
@@ -78,5 +78,5 @@ cyan "Quick way to get file's contents onto the command line:"
 
 log 'echo $(<myscript1.zsh)'
 
-maganda "This is more efficient than using the \`cat\` method."
+magenta "This is more efficient than using the \`cat\` method."
 

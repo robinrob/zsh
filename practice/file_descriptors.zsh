@@ -11,7 +11,7 @@ red an error >&2 } > file
 cat file
 rm file'
 
-maganda "The braces allow you to create a 'black box' out of multiple lines of
+magenta "The braces allow you to create a 'black box' out of multiple lines of
 commands."
 
 
@@ -32,7 +32,7 @@ echo An error >&2 } >&file
 cat file
 rm file'
 
-maganda "The second is a ZSH-shorthand for the Bourne-style first."
+magenta "The second is a ZSH-shorthand for the Bourne-style first."
 
 
 log
@@ -68,5 +68,5 @@ log 'echo test >/tmp/redirtest
 sed "s/e/Z/g" <>/tmp/redirtest 1>&0
 cat /tmp/redirtest'
 
-maganda "This is a general way to achieve the same as using - in this example -
+magenta "This is a general way to achieve the same as using - in this example -
 sed -i."

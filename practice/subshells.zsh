@@ -7,7 +7,7 @@ cyan "Commands can be run in a sub-shell by using a ()-pair:"
 
 log '(cd ~; ls)'
 
-maganda "This sub-shell inherits all settings from the parent shell."
+magenta "This sub-shell inherits all settings from the parent shell."
 
 
 log
