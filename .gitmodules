@@ -4,3 +4,6 @@
 [submodule "projects/oh-my-dotfiles"]
   path = projects/oh-my-dotfiles
   url = git@github.com:robinrob/oh-my-dotfiles.git
+[submodule "projects/disable-osx-startup-sound"]
+	path = projects/disable-osx-startup-sound
+	url = git@github.com:robinrob/disable-osx-start-sound
