@@ -1,6 +1,6 @@
 [submodule "projects/disable-osx-startup-sound"]
   path = projects/disable-osx-startup-sound
-  url = git@gist.github.com:2ccacd2d5358bcd8fc38a46f5e44228e.git
+  url = git@github.com:robinrob/disable-osx-startup-sound
 [submodule "projects/dotfiles"]
   path = projects/dotfiles
   url = git@github.com:robinrob/dotfiles.git
