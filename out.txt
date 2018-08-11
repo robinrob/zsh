@@ -1,0 +1,110 @@
+PossibleFile: branch
+PossibleFile: branch
+PossibleFile: 
+PossibleFile: not
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: modified:
+PossibleFile: modified:
+PossibleFile: modified:
+PossibleFile: 
+PossibleFile: files:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: out.txt
+PossibleFile: practice/case_string_in.zsh
+PossibleFile: practice/count_score.zsh
+PossibleFile: practice/score.txt
+PossibleFile: practice/time_string_search.zsh
+PossibleFile: 
+PossibleFile: changes
+PossibleFile: master
+PossibleFile: 'origin/master'.
+PossibleFile: 
+PossibleFile: commit:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: files:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: out.txt
+PossibleFile: practice/case_string_in.zsh
+PossibleFile: practice/count_score.zsh
+PossibleFile: practice/score.txt
+PossibleFile: practice/time_string_search.zsh
+PossibleFile: 
+PossibleFile: 
+PossibleFile: master
+PossibleFile: 'origin/master'.
+PossibleFile: 
+PossibleFile: commit:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: projects/disable-osx-startup-sound 
+PossibleFile: projects/dotfiles 
+PossibleFile: projects/oh-my-dotfiles 
+PossibleFile: 
+PossibleFile: files:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: out.txt
+PossibleFile: practice/case_string_in.zsh
+PossibleFile: practice/count_score.zsh
+PossibleFile: practice/score.txt
+PossibleFile: practice/time_string_search.zsh
+PossibleFile: 
+PossibleFile: commit 
+PossibleFile: master
+PossibleFile: 'origin/master'.
+PossibleFile: 
+PossibleFile: commit:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: files:
+PossibleFile: 
+PossibleFile: 
+PossibleFile: out.txt
+PossibleFile: practice/case_string_in.zsh
+PossibleFile: practice/count_score.zsh
+PossibleFile: practice/score.txt
+PossibleFile: practice/time_string_search.zsh
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
+PossibleFile: 
